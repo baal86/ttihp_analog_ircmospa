@@ -26,14 +26,37 @@ logx=0
 logy=0
 sim_type=dc
 sweep=0
+color="4 5"
+node="outp
+inp"}
+B 2 470 -740 1270 -340 {flags=graph
+y1=-0.0014
+y2=-0.00097
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=0.5
+x2=2.5
+divx=5
+subdivx=1
+xlabmag=1.0
+ylabmag=1.0
+legendmag=1.0
+node="offset; inp outp -"
 color=4
-node=outp}
+dataset=-1
+unitx=1
+logx=0
+logy=0
+}
 N 0 60 0 90 {lab=0}
 N 0 -120 0 -100 {lab=VDD}
 N 100 -20 220 -20 {lab=OUTP}
-N -180 20 -180 80 {lab=#net1}
+N -180 20 -180 80 {lab=INP}
 N -180 140 -180 220 {lab=0}
-N -180 20 -80 20 {lab=#net1}
+N -180 20 -80 20 {lab=INP}
 N -110 -60 -80 -60 {lab=OUTP}
 N -110 -180 -110 -60 {lab=OUTP}
 N 80 -20 100 -20 {lab=OUTP}
@@ -87,3 +110,4 @@ C {vdd.sym} 0 -120 0 0 {name=l2 lab=VDD}
 C {lab_wire.sym} 160 -20 0 0 {name=p1 sig_type=std_logic lab=OUTP}
 C {vsource.sym} -180 110 0 0 {name=V2 value=1.0 savecurrent=false}
 C {gnd.sym} -180 220 0 0 {name=l4 lab=0}
+C {lab_wire.sym} -120 20 0 0 {name=p2 sig_type=std_logic lab=INP}
